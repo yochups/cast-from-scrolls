@@ -22,9 +22,11 @@ public abstract class ScrollMixin {
 
     @Redirect(
             method = "use",
+            remap = true,
             at = @At(
                     value = "INVOKE",
-                    target = "Lio/redspace/ironsspellbooks/capabilities/magic/SyncedSpellData;isSpellLearned(Lio/redspace/ironsspellbooks/api/spells/AbstractSpell;)Z"))
+                    target = "Lio/redspace/ironsspellbooks/capabilities/magic/SyncedSpellData;isSpellLearned(Lio/redspace/ironsspellbooks/api/spells/AbstractSpell;)Z",
+                    remap = false))
     private boolean castFromScrolls$allowUnlearnedScroll(
             SyncedSpellData syncedSpellData,
             AbstractSpell spell) {
