@@ -6,6 +6,7 @@
   "refmap": "cast_from_scrolls.refmap.json",
   "mixins": [
     "AbstractSpellMixin",
+    "CastSourceMixin",
     "PlayerRecastsMixin",
     "ScrollMixin"
   ],
