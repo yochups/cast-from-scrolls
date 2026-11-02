@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nidza.castfromscrolls.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cast_from_scrolls.refmap.json",
+  "mixins": [
+    "AbstractSpellMixin",
+    "PlayerRecastsMixin",
+    "ScrollMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
